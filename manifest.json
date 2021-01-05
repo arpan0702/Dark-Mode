@@ -11,9 +11,14 @@
         "default_title": "Dark Mode",
         "default_popup": "popup.html"
     },
+    "background":{
+        "scripts":[
+            "popup.js"
+        ],
+        "persistent":true
+    },
     "permissions":[
         "tabs",
-        "https://*/*",
-        "http://*/*"
+        "<all_urls>"
     ]
 }

@@ -1,22 +1,20 @@
-if(document.querySelector(".popup")){
-    console.log(5);
+if(document.querySelector(".button")){
     const button=document.querySelector(".button");
     const circle=document.querySelector(".circle");
     let buttonOn=false;
     button.addEventListener("click", ()=>{
         if(!buttonOn){
             buttonOn=true;
-            console.log("hi");
-            circle.style.animation="moveCircleRight is forwards";
-            button.style.animation="backgroundYellow is forwards";
+            circle.style.animation="moveCircleRight 1s forwards";
+            button.style.animation="backgroundYellow 1s forwards";
             chrome.tabs.executeScript({
                 file:"appOn.js"
             })
         }
         else{
             buttonOn=false;
-            circle.style.animation="moveCircleLeft is forwards";
-            button.style.animation="backgroundBlue is forwards";
+            circle.style.animation="moveCircleLeft 1s forwards";
+            button.style.animation="backgroundBlue 1s forwards";
             chrome.tabs.executeScript({
                 file:"appOff.js"
             })

@@ -1,83 +1,83 @@
 body{  
     min-width: 300px;
-    align-content:space-around;
+    align-content:center;
 }
 h1{
     font-family: 'Audiowide', cursive;
 }
-    .golden{
-        color:rgb(235, 231, 35)
-    }
-    .blue{
-        color:rgb(98, 0, 255);
-    }
-    p, .button{
-        font-family: 'Open Sans',sans-serif;
-        font-size: 1 rem;
-    }
-    .button{
-        background-color: rgb(20, 217, 243) ;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        height: 2rem;
-        width: 4.5rem;
-        border-radius: 1rem;
-        cursor: pointer;
-        /*animation: backgroundYellow;*/
-    }
-    .row{
-        padding: 0 0.25rem;
-        pointer-events: none;
-    }
-    .circle{
-        position:absolute;
-        top:0;
+.golden{
+    color:rgb(235, 231, 35);
+}
+.blue{
+    color:rgb(98, 0, 255);
+}
+p{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1 rem;
+}
+.button{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1rem;
+    background-color: rgb(20, 217, 243) ;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 2rem;
+    width: 4.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.row{
+    padding: 0 0.25rem;
+    pointer-events: none;
+}
+.circle{
+    position:absolute;
+    top:0;
+    left:0;
+    height:2rem;
+    width: 2rem;
+    border-radius: 50%;
+    pointer-events: none;
+    background-color: darkmagenta;
+}
+@keyframes moveCircleRight{
+    from{
         left:0;
-        height:2rem;
-        width: 2rem;
-        border-radius: 50%;
-        pointer-events: none;
-        background-color: darkmagenta;
-        /*animation: moveCircleRight 1s infinite;*/
+        background-color: rgb(235, 231, 35);
     }
-    @keyframes moveCircleRight{
-        from{
-            left:0;
-            background-color: rgb(235, 231, 35);
-        }
-        to{
-            left:100%;
-            transform: translateX(-100%);
-            background-color: royalblue;
-        }
+    to{
+        left:100%;
+        transform: translateX(-100%);
+        background-color: royalblue;
     }
-    @keyframes moveCircleLeft{
-        from{
-            left:100%;
-            transform: translateX(-100%);
-            background-color: royalblue;
-        }
-        to{
-            left:0;
-            background-color: rgb(235, 231, 35);
-        }
+}
+@keyframes moveCircleLeft{
+    from{
+        left:100%;
+        transform: translateX(-100%);
+        background-color: royalblue;
     }
-    @keyframes backgroundYellow{
-        from{
-            background-color:lightblue;
-        }
-        to{
-            background-color: lightgreen;
-        }
+    to{
+        left:0;
+        background-color: rgb(235, 231, 35);
     }
-    @keyframes backgroundBlue{
-        from{
-            background-color: lightgreen;
-        }
-        to{
-            background-color:lightblue;
-        }
+}
+@keyframes backgroundYellow{
+    from{
+        background-color:lightblue;
     }
+    to{
+        background-color: lightgreen;
+    }
+}
+@keyframes backgroundBlue{
+    from{
+        background-color: lightgreen;
+    }
+    to{
+        background-color:lightblue;
+    }
+}
